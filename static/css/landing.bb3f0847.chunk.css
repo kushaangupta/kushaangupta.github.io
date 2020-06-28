@@ -1,4 +1,7 @@
 @charset "UTF-8";
+ion-icon {
+  color: #657786;
+}
 
 footer {
   padding: 1.33rem 0;
@@ -60,14 +63,6 @@ footer {
     width: 0.9975rem;
     height: 0.9975rem;
     margin-left: 0.9975rem; }
-    footer .icn.discord {
-      background-image: url(../../images/icn-discord-dark-grey.svg); }
-    footer .icn.github {
-      background-image: url(../../images/icn-github-dark-grey.svg); }
-    footer .icn.medium {
-      background-image: url(../../images/icn-medium-dark-grey.svg); }
-    footer .icn.twitter {
-      background-image: url(../../images/icn-twitter-dark-grey.svg); }
   @media (max-width: 40em) {
     footer label {
       margin-left: 0.9975rem; }
