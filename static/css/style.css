@@ -1,6 +1,7 @@
 @charset "UTF-8";
 ion-icon {
   color: #657786;
+  scale: 20rem;
 }
 
 footer {
@@ -95,17 +96,10 @@ footer {
 
 header {
   padding: 1rem 0;
-  background: #070A0E;
+  background-image: url(../../images/cover.jpg);
   min-height: 80px; }
   header.dark-2 {
     background-color: #141E27; }
-  header .brand {
-    background-image: url(../../images/compound-logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: transparent;
-    width: 127px;
-    height: 27px; }
   header .text-center a {
     margin: 0 0.665rem;
     color: #FFFFFF;
@@ -133,60 +127,6 @@ header {
     text-transform: none; }
     header .comp-balance img {
       margin-left: 0.25rem; }
-  header #account {
-    background: #141E27;
-    border-radius: 3px;
-    padding: 0.665rem;
-    margin-left: 1.33rem;
-    letter-spacing: 1px;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: none; }
-    header #account .icon {
-      flex-shrink: 0;
-      display: inline-block;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      width: 12px;
-      height: 12px;
-      min-width: 0;
-      min-height: 0;
-      margin-right: 0.665rem; }
-    header #account .icon.coinbase {
-      background-image: url(../../images/icn-coinbase-wallet-connected.svg); }
-    header #account .icon.ledger.light {
-      background-image: url(../../images/icn-ledger-connected-light.svg); }
-    header #account .icon.ledger.dark {
-      background-image: url(../../images/icn-ledger-connected-dark.svg); }
-    header #account .icon.metamask {
-      background-image: url(../../images/icn-metamask-connected.svg); }
-  header #select-currency {
-    padding-right: 0.25rem; }
-  header.light {
-    background: #FFFFFF; }
-    header.light .brand {
-      background-image: url(../../images/compound-logo-dark.svg); }
-    header.light .text-center a {
-      color: #141E27; }
-      header.light .text-center a.active {
-        color: #00D395;
-        padding: 0.3rem 0;
-        border-bottom: 1px solid #00D395;
-        transition: padding 0.2s ease; }
-      header.light .text-center a:hover {
-        color: #00D395;
-        text-decoration: none;
-        padding-bottom: 0.5rem; }
-    header.light .hamburger span {
-      background-color: #070A0E; }
-    header.light #account {
-      background: #F9FAFB;
-      color: #141E27; }
-      header.light #account:hover {
-        color: #00D395; }
-      header.light #account.active {
-        border-bottom: 2px solid #00D395; }
   header .mobile-header {
     position: fixed;
     display: flex;
@@ -313,7 +253,6 @@ header {
 #landing-overview {
   padding: 0;
   text-align: center;
-  background: #070A0E;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -499,25 +438,26 @@ header {
     margin-bottom: 0px; }
   #portfolio p {
     margin-bottom: 0px; }
-  #portfolio a, #about a {
-    font-family: 'Haas Grot Text R';
-    text-transform: none;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.5rem; }
+    #about a {
+      font-family: 'Haas Grot Text R';
+      text-transform: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.5rem; }
     #portfolio a:hover {
       text-decoration: none; }
   #portfolio .panel {
     position: relative;
     cursor: pointer;
     display: flex;
-    z-index: 2;
+    z-index: 9000 !important;
     flex-direction: column;
     padding: 32px 14px 20px 32px;
     border-style: none;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.04);
     border-radius: 2px;
+    height: fit-content;
     transition: box-shadow 0.3s ease-in-out; }
     @media (min-width: 40em) {
       #portfolio .panel {
@@ -530,7 +470,8 @@ header {
       opacity: 1; }
   #portfolio .projects {
     margin-top: 60px;
-    width: 100%; }
+    width: 100%;
+    z-index: 9000 !important; }
     #portfolio .projects .carousel-inner {
       overflow: visible; }
     #portfolio .projects__carousel {
@@ -557,7 +498,7 @@ header {
     height: 64px;
     border-radius: 50%; }
     #portfolio .icon--anchorage {
-      background-image: url(../../images/anchorage.jpg); }
+      background-image: url(../../images/roboclub.png); }
     #portfolio .icon--argent {
       background-image: url(../../images/argent.svg); }
     #portfolio .icon--compound {
@@ -577,7 +518,7 @@ header {
     #portfolio .icon--exodus {
       background-image: url(../../images/exodus.svg); }
     #portfolio .icon--fireblocks {
-      background-image: url(../../images/fireblocks.svg); }
+      background-image: url(../../images/highlight.png); }
     #portfolio .icon--huobi {
       background-image: url(../../images/huobi-wallet.svg); }
     #portfolio .icon--imToken {
@@ -611,7 +552,11 @@ header {
     display: flex; }
     #portfolio .project-card-try #arrow {
       opacity: 0;
-      transition: opacity 0.3s ease-in-out; }
+      margin-left: 8px;
+      transition: opacity 0.3s ease-in-out;
+      transition: transform 0.2s ease-in-out; }
+    #portfolio .project-card-try:hover #arrow {
+      transform: translateX(5px); }
     #portfolio .project-card-try .small {
       flex-grow: 1;
       color: #00D395;
@@ -651,7 +596,7 @@ header {
       color: #00D395;
       border-bottom: 1px solid transparent;
       transition: border-bottom 0.2s ease-in-out; }
-    #misc .call-to-action #arrow, #misc .call-to-action #arrow {
+    #misc .call-to-action #arrow, #experience .call-to-action #arrow {
       margin-left: 10px;
       transition: transform 0.2s ease-in-out; }
     #misc .call-to-action:hover a, #experience .call-to-action:hover a {
@@ -685,14 +630,24 @@ header {
         flex-direction: column;
         overflow: hidden;
         justify-content: center; }
-        #misc .audits__bug-bounty__image-section .security-panel__image, #experience .audits__bug-bounty__image-section .security-panel__image {
+        #misc .audits__bug-bounty__image-section ion-icon {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          justify-content: center; 
+          margin-bottom: 0;
+          transform: translateY(0);
+          color: #fff; }
+        #experience .audits__bug-bounty__image-section .security-panel__image {
           margin-bottom: 0;
           transform: translateY(0); }
       #misc .audits__bug-bounty__text-section, #experience .audits__bug-bounty__text-section {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        align-items: center;
+        align-items: left;
         position: relative;
         height: 100%;
         width: 50%;
@@ -754,39 +709,22 @@ header {
       #misc .security-panel__image--tob {
         width: 5.5625rem;
         height: 3.13375rem;
-        background-image: url(../../images/logo-trail-of-bits.svg); }
-      #misc .security-panel__image--certora {
+        background-image: url(../../images/headAboveWater.webp); }
+      #misc .security-panel__image--oz {
         width: 8.879375rem;
         height: 2.734375rem;
-        background-image: url(../../images/certora.svg); }
+        background-image: url(../../images/iLikeMeBetter.webp); }
+      #misc .security-panel__image--certora {
+        font-size: 128px;
+        color: #FFF; }
       #misc .security-panel__image--gauntlet {
         width: 5.36875rem;
         height: 5.36875rem;
-        background-image: url(../../images/gauntlet.svg); }
-      #misc .security-panel__image--a16z {
-        width: 5.125rem;
-        height: 2rem;
-        background-image: url(../../images/a16z.svg); }
-      #misc .security-panel__image--bain {
-        width: 9.375rem;
-        height: 2.3125rem;
-        background-image: url(../../images/bain-capital.svg); }
+        color: #FFF; }
       #misc .security-panel__image--coinbase {
         width: 8.0175rem;
         height: 1.970625rem;
         background-image: url(../../images/gtsaLogo.png); }
-      #misc .security-panel__image--paradigm {
-        width: 9.34375rem;
-        height: 2.2025rem;
-        background-image: url(../../images/paradigm.svg); }
-      #misc .security-panel__image--polychain {
-        width: 7.151875rem;
-        height: 2.475625rem;
-        background-image: url(../../images/polychain.svg); }
-      #misc .security-panel__image--dragonfly {
-        width: 7.393125rem;
-        height: 2.41rem;
-        background-image: url(../../images/dragonfly-capital.svg); }
   #misc .investors-section, #experience .investors-section {
     margin-top: 10rem; }
     #misc .investors-section__investors, #experience .investors-section__investors {
@@ -1296,3 +1234,60 @@ a:active, a:hover {
 
 .italic {
   font-style: italic; }
+
+.carousel{
+  background-color: #FFFFFF;
+}
+
+#landing-overview #dot-grid {
+  z-index: -1 !important; }
+
+#portfolio .panel {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  z-index: 9000 !important;
+  flex-direction: column;
+  padding: 32px 14px 20px 32px;
+  border-style: none;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.04);
+  border-radius: 2px;
+  height: 100%;
+  min-height: fit-content;
+  transition: box-shadow 0.3s ease-in-out; }
+
+#portfolio a {
+  font-family: 'Haas Grot Text R';
+  text-transform: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem; }
+
+.project-card-try {
+  position: absolute;
+  bottom: 20px;
+}
+
+.project-card-description {
+  margin-bottom: 40px;
+}
+
+.security-panel {
+  width: 100% !important;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#material-bg {
+  background-image: url(../../images/cover.jpg);
+}
