@@ -3,7 +3,7 @@
 // 2011, Jeff Donahue (http://jeffdonahue.com/).
 // license: you can use this if you want to i guess
 
-function scrambledString(
+function ScrambledString(
   tag,
   objName,
   initScrambledString,
@@ -14,16 +14,16 @@ function scrambledString(
   this.string = initScrambledString;
   this.indices = initScrambledStringIndices;
   this.rescramble = rescramble;
-  this.initAnimatedBubbleSort = initAnimatedBubbleSort;
+  this.initAnimation = initAnimation;
   this.bubbleSortStep = bubbleSortStep;
   this.bubbleSortBookmark = 0;
 
   this.rescramble();
   this.tag.innerHTML =
     this.string +
-    '<email> <a href="#" onClick="' +
+    '<email> <a onClick="' +
     this.objName +
-    '.initAnimatedBubbleSort();return false;">&nbsp; unscramble</a> </email>';
+    '.initAnimation();">&nbsp; unscramble</a> </email>';
 }
 
 function rescramble() {
@@ -39,8 +39,13 @@ function rescramble() {
   }
 }
 
-function initAnimatedBubbleSort() {
-  this.interval = setInterval(this.objName + ".bubbleSortStep()", 12);
+function initAnimation() {
+  if (Math.random() < 0.5) {
+    this.interval = setInterval(this.objName + ".bubbleSortStep()", 12);
+    return;
+  }
+  
+  initAnimatedGA();
 }
 
 function bubbleSortStep() {
