@@ -1,0 +1,110 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Kushaan Gupta
+    - name: Date of Birth
+      value: 18th August 1998
+    - name: Languages
+      value: English, Hindi, French
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Master of Science
+      institution: University of Lethbridge, Lethbridge, Alberta, Canada
+      year: 2024
+      description:
+        - title: Researching memory-guided spatial decision making in rats.
+          contents:
+            - Correlative study on prefrontal cortex.
+    - title: Bachelor of Engineering
+      institution: Institute of Engineering & Technology, Devi Ahilya Vishwavidyalaya, Indore, Madhya Pradesh, India
+      year: 2020
+      description:
+        - Thesis. Automated eye blink detection in electroencephalogram.
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Graduate Research Assistant
+      institution: Canadian Centre for Behavioural Neuroscience, University of Lethbridge
+      year: 2022-2024
+      description:
+        - title: Thesis. memory-guided decision making in rat prefrontal cortex.
+          contents:
+            - Supervisor - Dr. David R. Euston.
+    - title: Graduate Teaching Assistant
+      institution: Canadian Centre for Behavioural Neuroscience, University of Lethbridge
+      year: 2022-2024
+      description:
+        - Course. NEUR 3600 - Fundamentals of Neurobiology.
+        - >
+          Aiding learning via group help sessions, personalized help on material and
+          assignments, grading of homework and exams.
+
+    - title: Graduate Teaching Assistant
+      institution: Department of Mathematics & Computer Science, University of Lethbridge
+      year: 2022
+      description:
+        - Course. MATH 7460 - Analytic Number Theory
+        - >
+          Aiding learning via personalized help on computational programming assignments
+          in Sagemath using Python
+
+    - title: Teaching Assistant
+      institution: Neuromatch Academy
+      year: 2022
+      description:
+        - >
+          Facilitated learning & managed social dynamics of a class of diverse group of
+          students during the course
+
+    - title: Post Bacc. Research Assistant
+      institution: Centre for Neuroscience, Indian Institute of Science, Bangalore
+      year: 2020-2022
+      description:
+        - title: Plasticity of astrocytes due to behavior and phamacology
+          contents:
+            - Supervisor - Dr. Swananda V. Marathe
+            - Developed SMorph Python library and tested it on data from in vivo studies
+
+    - title: Software Development Engineer
+      institution: Deqode
+      year: 2020
+      description:
+        - >
+          Developed and audited Ethereum smart contracts, and Google Cloud applications
+          for market maker blockchain-based protocols of a stock exchange platform
+
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/swanandlab/SMorph">SMorph</a>
+      year: 2020-now
+      description: Automated morphological analysis for cells.
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2022
+      items: 
+        - Graduate Research Award
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Neuroscience.
+      items: 
+        - Systems neuroscience.
+        - Computational cognitive neuroscience.
+        - Cellular and molecular neuroscience.
+    - title: Machine Intelligence.
+      items:
+        - Deep learning
+        - Reinforcement learning.
+
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Badminton, Guitar, etc.
