@@ -1,0 +1,172 @@
+{
+  "basics": {
+    "name": "Kushaan Gupta",
+    "label": "Graduate Student",
+    "image": "",
+    "email": "kushaan.gupta@uleth.ca",
+    "phone": "(403) 393-3382",
+    // "url": "https://kushaangupta.github.io/",
+    // "summary": "A transdisciplinary optimist in the making",
+    "location": {
+      "address": "4401 University Drive West",
+      "postalCode": "AB T1K3M4",
+      "city": "Lethbridge",
+      "countryCode": "CA",
+      "region": "Alberta"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "KushaanGupta",
+        "url": "https://twitter.com/KushaanGupta"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "University of Lethbridge, Lethbridge, Alberta, Canada",
+      "url": "https://www.ulethbridge.ca/",
+      "area": "Neuroscience",
+      "studyType": "Master of Science",
+      "startDate": "2022-05-01",
+      "endDate": "2024-04-30",
+      "score": "4.0",
+      "courses": [
+        "Thesis: Investigating neural correlates of memory-guided spatial decision making in rats' prefrontal cortex",
+        "Neuroscience Research Dialogues",
+        "Methods in Computational Neuroscience",
+        "Advanced Statistics",
+        "Essentials for Scholarly Communication"
+      ]
+    },
+    {
+      "institution": "Institute of Engineering & Technology, Devi Ahilya Vishwavidyalaya, Indore, Madhya Pradesh, India",
+      "url": "https://www.ulethbridge.ca/",
+      "area": "Computer Engineering",
+      "studyType": "Bachelor of Engineering",
+      "startDate": "2016-07-01",
+      "endDate": "2020-06-30",
+      "score": "8.02",
+      "courses": [
+        "Thesis: Automated eye blink detection in electroencephalogram"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "name": "Neuromatch Academy - Computational Neuroscience",
+      "position": "Teaching Assistant",
+      "startDate": "2023-07-10",
+      "endDate": "2023-07-28",
+      "summary": "Facilitated learning of computational neuroscience while managing social dynamics of a class of diverse group of students"
+    },
+    {
+      "position": "Graduate Research Assistant",
+      "name": "Canadian Centre for Behavioural Neuroscience, University of Lethbridge",
+      "startDate": "2022-05-01",
+      "endDate": "2024-04-30",
+      "summary": "Thesis: memory-guided decision making in rat prefrontal cortex (Supervisor - Dr. David R. Euston)"
+    },
+    {
+      "position": "Graduate Teaching Assistant",
+      "name": "Canadian Centre for Behavioural Neuroscience, University of Lethbridge",
+      "startDate": "2022-09-01",
+      "endDate": "2024-04-30",
+      "summary": "Course: NEUR 3600 - Fundamentals of Neurobiology. Aided learning via group help sessions, personalized help on material and assignments, grading of homework and exams."
+    },
+    {
+      "position": "Graduate Teaching Assistant",
+      "name": "Department of Mathematics & Computer Science, University of Lethbridge",
+      "startDate": "2022-09-01",
+      "endDate": "2022-12-31",
+      "summary": "Course: MATH 7460 - Analytic Number Theory. Aided learning via personalized help on computational programming assignments in Sagemath using Python"
+    },
+    {
+      "position": "Teaching Assistant",
+      "name": "Neuromatch Academy - Deep Learning",
+      "startDate": "2022-07-10",
+      "endDate": "2022-07-28",
+      "summary": "Facilitated learning of deep learning & managed social dynamics of a class of diverse group of students"
+    },
+    {
+      "position": "Post Bacc. Research Assistant",
+      "name": "Centre for Neuroscience, Indian Institute of Science, Bangalore",
+      "startDate": "2020-08-01",
+      "endDate": "2022-04-30",
+      "summary": "Plasticity of astrocytes due to behavior and phamacology. (Supervisor - Dr. Swananda V. Marathe) Developed SMorph Python library and tested it on data from in vivo studies"
+    },
+    {
+      "position": "Software Development Engineer",
+      "name": "Deqode",
+      "startDate": "2020-01-01",
+      "endDate": "2020-07-31",
+      "summary": "Developed and audited Ethereum smart contracts, and Google Cloud applications for market maker blockchain-based protocols of a stock exchange platform"
+    }
+  ],
+  "volunteer": [],
+  "awards": [
+    {
+      "title": "Graduate Research Award",
+      "date": "2022-05-01",
+      "awarder": "University of Lethbridge"
+    }
+  ],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Neuroscience",
+      "keywords": [
+        "Systems neuroscience",
+        "Computational cognitive neuroscience",
+        "Cellular and molecular neuroscience"
+      ]
+    },
+    {
+      "name": "Machine Intelligence",
+      "keywords": [
+        "Deep learning",
+        "Reinforcement learning"
+      ]
+    },
+    {
+      "name": "Programming",
+      "keywords": [
+        "Python",
+        "C++",
+        "MATLAB",
+        "SageMath",
+        "R",
+        "JavaScript"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Dogri",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "French",
+      "fluency": "Professional working proficiency"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "SMorph",
+      "summary": "Automated morphological analysis for cells",
+      "startDate": "2020-08-01",
+      "url": "https://github.com/swanandlab/SMorph"
+    }
+  ]
+}
