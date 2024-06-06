@@ -43,6 +43,18 @@ layout: default
               {{ page.profile.address }}
             </div>
             {%- endif %}
+            <!-- Social (pre) -->
+            {%- if page.social %}
+              <div class="social">
+                <div class="contact-icons">
+                  {% include social.html %}
+                </div>
+
+                <div class="contact-note">
+                  {{ site.contact_note }}
+                </div>
+              </div>
+            {%- endif %}
           </div>
           {%- endif %}
 
@@ -83,7 +95,6 @@ layout: default
           {%- endif %}
         </article>
         <script src="./assets/js/geneticAlgo/dna.js"></script>
-        <script src="./assets/js/geneticAlgo/population.js"></script>
         <script src="./assets/js/scramble.js"></script>
         <script src="./assets/js/initUnscramble.js"></script>
 </div>
