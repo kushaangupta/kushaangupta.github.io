@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Started in University of Lethbridge
+title: Started MSc in University of Lethbridge
 date: 2022-05-01 09:00:00-0700
 inline: false
 related_posts: false

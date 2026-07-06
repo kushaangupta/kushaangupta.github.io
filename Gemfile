@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 group :jekyll_plugins do
     gem 'classifier-reborn'
-    gem 'jekyll'
+    gem 'jekyll', '~> 4.3.4'
+    gem 'jekyll-sass-converter', '~> 2.2.0'
     gem 'jekyll-archives'
     gem 'jekyll-diagrams'
     gem 'jekyll-email-protect'

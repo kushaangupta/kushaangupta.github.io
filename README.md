@@ -4,11 +4,10 @@
 
 ```bash
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-cd ~/.rbenv && src/configure && make -C src
-
+~/.rbenv/bin/rbenv init
 ```
 
-Add the following lines to your ~/.bashrc file:
+Add the following lines to your `~/.bashrc` or `~/.zshrc` file:
 ```bash
 # enable rbenv
 if [ -d "$HOME/.rbenv/" ]; then
@@ -20,7 +19,7 @@ fi
 ```bash
 mkdir -p "$(rbenv root)"/plugins
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
-sudo apt install -y libssl-dev
+sudo apt install -y libssl-dev imagemagick
 rbenv install 3.1.2
 ```
 
